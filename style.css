@@ -1,0 +1,63 @@
+.imagination {
+    background-color: #5f1733;
+    height: fit-content;
+    text-align: center;
+    color: white;
+}
+
+.we {
+    font-weight: 200;  
+    float: left;
+    text-align: center;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid;
+    border-image: linear-gradient(right, red, rgb(13, 13, 155));
+}
+
+h5 {
+    display: inline;
+}
+
+.works {
+    text-align: center;
+}
+
+.thumbnails {
+    text-align: center;
+}
+
+.thumbnails a{
+    text-decoration: none;
+    color: #b63365;
+}
+
+.caret {
+    border-style: none;
+    background-color: white;
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+}
+
+.nav p{
+    text-align: center;
+}
