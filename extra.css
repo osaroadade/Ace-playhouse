@@ -1,0 +1,149 @@
+.intro {
+    padding: 10px;
+    background-position: left;
+}
+
+nav{
+    background-color: rgb(99, 8, 61);
+}
+
+.img-text {
+    color: white;
+    background-color: pink;
+    margin-bottom: 200px;
+}
+
+.portfolio-1 {
+    
+    height: 100%;
+    padding: 10px;
+
+}
+
+.banner {
+    background-color: rgb(99, 8, 61);
+}
+
+.brand {
+    color: white !important;
+}
+
+.navbar-nav li a {
+    color: white!important;
+}
+
+.active {
+    border-bottom: 2px solid rgb(245, 229, 12);
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.my-links {
+    font-size: large;
+    padding: 5px 5px;
+}
+
+nav span{
+    color: white !important;
+}
+
+header p{
+    color: white;
+    text-align: center;
+    margin-top: 130px;
+}
+
+
+body {
+    font-family: arial;
+   /* background-image: url(craft_5120x3840.jpg);*/
+    color: black;
+}
+
+.vertical {
+    text-align: right;
+}
+
+.message {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 100px;
+  
+}
+
+.port-d {
+    text-align: center;
+}
+
+.port-d p{
+    display: inline;
+}
+
+h5 {
+    display: inline;
+}
+
+.works {
+    text-align: center;
+    opacity: 1 !important;
+}
+
+.thumbnayl{
+    max-width: 80%;
+}
+
+.thumbnails {
+    text-align: center;
+    background: whitesmoke;
+    z-index: 1;
+    opacity: 1;
+    border-radius:  10px;
+}
+
+.thumbnails a{
+    text-decoration: none;
+    color: #b63365;
+}
+
+.caret {
+    border-style: none;
+    background-color: inherit;
+    color: black;
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border-style: solid;
+    color: white;
+    background: linear-gradient(to right, rgb(241, 130, 195), rgb(158, 54, 115), rgb(99, 8, 61));
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.footerr {
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    background-color: rgb(99, 8, 61);
+    color: white;
+
+}
+
+.nav p{
+    text-align: center;
+}
