@@ -65,6 +65,9 @@ header nav{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+header nav ul li + li{
+    margin-left: 20px;
+}
 
 /* Stylinng the Default Bootstrap Nav Start */
 .navbar-toggler {
@@ -91,7 +94,7 @@ header nav.navbar-light ul li a.nav-link:hover{
     color: #000!important;
     font-weight: bold!important;
 }
-/* Stylinng the Default Bootstrap Nav Start */
+/* Stylinng the Default Bootstrap Nav End */
 
 section.hero-section{
     height: 75vh;
@@ -459,14 +462,14 @@ section.news-signup .sign-up a{
 footer.footer{
     padding: 20px 0;
 }
-ul li{
+footer.footer ul li{
     list-style: none;
     display: inline;
 }
-ul li + li{
+footer.footer ul li + li{
     margin-left: 15px;
 }
-ul li a{
+footer.footer ul li a{
     color: #423F3F;
     font-size: 16px;
 }
@@ -520,6 +523,9 @@ ul li a{
 @media only screen and (max-width :575px){
     .container{
         padding: 0 20px;
+    }
+    header nav ul li + li{
+        margin-left: 0;
     }
     .offer .offer-section{
         background-color: transparent;
@@ -598,7 +604,7 @@ ul li a{
     }
     .company-links li{
         margin-right: 15px;
-        margin-left: 0;
+        margin-left: 0!important;
         margin-bottom: 5px;
     }
     .company-links li:last-child{
