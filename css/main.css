@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
 body {
     font-family: "Raleway", sans-serif;
 }
@@ -564,7 +564,7 @@ ul li a{
         padding: 80px 0;
     }
     section.contact .tcr{
-        text-align: center;
+        margin-bottom: 30px;
     }
     .atc{
         text-align: center;
