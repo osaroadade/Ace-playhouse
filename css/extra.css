@@ -3,10 +3,6 @@
     background-position: left;
 }
 
-nav{
-    background-color: rgb(99, 8, 61);
-}
-
 .img-text {
     color: white;
     background-color: pink;
@@ -79,6 +75,10 @@ body {
     margin-bottom: 100px;
   
 }
+
+
+
+
 
 .port-d {
     text-align: center;
