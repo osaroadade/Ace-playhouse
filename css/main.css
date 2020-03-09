@@ -12,6 +12,10 @@ button,
 button:focus{
     outline: none;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
 a:hover {
     text-decoration: none;
 }  
@@ -58,27 +62,37 @@ a:hover {
     }
 }
 header nav{
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-header nav ul li + li{
-    margin-left: 20px;
+
+/* Stylinng the Default Bootstrap Nav Start */
+.navbar-toggler {
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    color: #000!important;
 }
-header nav ul li a{
+header nav.navbar-light{
+    background-color: transparent!important;
+}
+header nav.navbar-light ul li a.nav-link{
     color: #000;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 15px;
 }
 .active{
-    color:#007bff;
+    color:#007bff!important;
 }
-header nav ul li a:hover{
-    color: #007bff;
+header nav.navbar-light ul li a.nav-link:hover{
+    color: #007bff!important;
 }
 .navbar-brand{
-    color: #000;
-    font-weight: bold;
+    color: #000!important;
+    font-weight: bold!important;
 }
+/* Stylinng the Default Bootstrap Nav Start */
+
 section.hero-section{
     height: 75vh;
     background-color: #fafafa;
@@ -93,7 +107,7 @@ section.hero-section .hd-1{
 section.hero-section .hd-1 h1{
     margin-bottom: 20px;
     font-size: 38px;
-    font-weight: 600;
+    font-weight: bold;
     color: #7e7e7e;
     line-height: 50px;
 }
@@ -145,22 +159,21 @@ section.hero-section .hd-1 h1{
 }
 .offer .offer-section{
     background-color: #FFFFFF;
-    border-radius: .3em;
+    border-radius: 5px;
     -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
-    width: 90%;
 }
 .offer .offer-section .offer-section-details{
     padding: 36px 25px;
     position: relative;
-    width: 100%;
     text-align: center;
+    overflow: hidden;
 }
-.offer .offer-section .offer-section-details{
-    border-left: 1px solid #eeeeee;
+.offer .offer-section .np{
+    border-right: 1px solid #eeeeee;
 }
-.offer .offer-section .offer-section-details:first{
-    border-left: none;
+.offer .offer-section .np:last-child{
+    border-right: none;
 }
 .offer .offer-section .offer-section-details img {
     height: 60px;
@@ -168,7 +181,7 @@ section.hero-section .hd-1 h1{
     transition: 0.7s;
 }
 .offer .offer-section .offer-section-details h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 18px;
     font-weight: 500;
 }
@@ -287,7 +300,6 @@ section.works .work-portfolio h1{
     font-size: 24px;
     line-height: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
     max-width: 200px;
 }
 .w-100 img{
@@ -314,7 +326,7 @@ section.works .ow  p{
     margin-bottom: 0;
 }
 section.works .nm a{
-    margin-top: 24px;
+    margin-top: 20px;
 }
 section.contact{
     background-color: #000;
@@ -438,7 +450,7 @@ section.news-signup .sign-up{
 section.news-signup .sign-up h1{
     color: #828286;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 42px;
     margin: 0;
 }
@@ -447,9 +459,6 @@ section.news-signup .sign-up a{
 }
 footer.footer{
     padding: 20px 0;
-}
-ul{
-    padding: 0;
 }
 ul li{
     list-style: none;
@@ -464,4 +473,82 @@ ul li a{
 }
 .company-links li a{
     font-size: 14px;
+}
+
+/*Responsive Code Starts Here*/
+
+/* Max width 767px */
+@media only screen and (max-width: 767px){
+    .offer{
+        margin-top: 20px;
+    }
+    .offer .offer-section{
+        -webkit-box-shadow: 0px 15px 30px rgba(0,0,0,0.03);
+        box-shadow: 0px 15px 30px rgba(0,0,0,0.03);
+    }
+    .offer .offer-section .np{
+        border-right: none;
+    }
+    .offer .offer-section .np:last-child{
+        border-bottom: none;
+    }
+    .offer .offer-section .offer-section-details{
+        padding: 36px 20px;
+    }
+    .offer .offer-section .offer-section-details h3{
+        font-size: 19px;
+    }
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .offer .offer-section .np{
+        border-right: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee;
+    }
+    .offer .offer-section .np:nth-child(2),
+    .offer .offer-section .np:nth-child(4),
+    .offer .offer-section .np:nth-child(6){
+        border-right: none;
+    }
+    .offer .offer-section .np:nth-child(3),
+    .offer .offer-section .np:nth-child(4){
+        border-bottom: none;
+    }
+}
+
+/* Max width 575px */
+@media only screen and (max-width :575px){
+    .offer .offer-section{
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .offer .offer-section .offer-section-details{
+        border: 1px solid #eee;
+        margin-top: 30px;
+    }
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .offer{
+        margin-top: 50px;
+    }
+    .offer .offer-section .np{
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .offer .offer-section .np:nth-child(2),
+    .offer .offer-section .np:nth-child(4),
+    .offer .offer-section .np:nth-child(6){
+        border-right: none;
+    }
+    .offer .offer-section .np:nth-child(3){
+        border-bottom: none;
+    }
+    .offer .offer-section .offer-section-details{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
