@@ -112,6 +112,13 @@ section.hero-section .hd-1 h1{
     font-weight: bold;
     color: #7e7e7e;
     line-height: 50px;
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
+}
+.hero-section .main-cta{
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
+    --sal-delay: 450ms;
 }
 .main-cta{
     color: #423F3F;
@@ -226,6 +233,8 @@ section.about h1{
     font-weight: 600;
     max-width: 500px;
     margin-bottom: 0px;
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
 }
 section.about p{
     max-width: 650px;
@@ -235,6 +244,9 @@ section.about p{
     color: #7e7e7e;
     font-weight: 400;
     margin-bottom: 0;
+    --sal-duration: 600ms;
+    --sal-easeing: ease-in;
+    --sal-delay: 450ms;
 }
 section.about a{
     margin-top: 24px;
@@ -249,6 +261,9 @@ section.about a{
     padding: 8px 12px;
     position: relative;
     z-index: 1;
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
+    --sal-delay: calc(450ms * 2);
 }
 .about-btn::before {
     background-color: #448aff;
@@ -281,11 +296,24 @@ section.about a{
 }
 .about-image img{
     width: 100%;
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
+    --sal-delay: calc(450ms * 3);
 }
 section.works{
     background-color: #fafafa;
     margin-top: 50px;
     padding: 150px 0px 80px;
+}
+section.works .fd-in{
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
+}
+section.works .fd-in1{
+    --sal-delay: 450ms;
+}
+section.works .fd-in2{
+    --sal-delay: calc(450ms * 2);
 }
 section.works .work-portfolio{
     color: #7e7e7e;
@@ -317,6 +345,8 @@ section.works .ow h1{
     font-weight: 600;
     max-width: 500px;
     margin-bottom: 0px;
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
 }
 section.works .ow  p{
     max-width: 650px;
@@ -326,9 +356,15 @@ section.works .ow  p{
     color: #7e7e7e;
     font-weight: 400;
     margin-bottom: 0;
+    --sal-delay: 450ms;
+    --sal-duration: 600ms;
+    --sal-easing: ease-in;
 }
 section.works .nm a{
     margin-top: 20px;
+    --sal-delay: calc(450ms * 2);
+    --sal-easing: ease-in;
+    --sal-duration: 600ms;
 }
 section.contact{
     background-color: #000;
@@ -388,7 +424,6 @@ form.reach{
     border-color: currentcolor currentcolor #8e8e8e;
     font-size: 16px;
     color: #fff;
-    /* margin: 40px 0px 20px; */
     border-style: none none solid;
     border-width: 0px 0px 1px;
     border-image: none;
@@ -455,9 +490,14 @@ section.news-signup .sign-up h1{
     font-weight: bold;
     line-height: 42px;
     margin: 0;
+    --sal-easing: ease-in;
+    --sal-duration: 600ms;
 }
 section.news-signup .sign-up a{
     margin-top: 32px;
+    --sal-easing: ease-in;
+    --sal-duration: 600ms;
+    --sal-delay: 450ms;
 }
 footer.footer{
     padding: 20px 0;
