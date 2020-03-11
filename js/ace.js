@@ -5,12 +5,11 @@ $(document).ready(function () {
 	})
 })
 
-// Fix header to top
-// Background Change on Scroll
+// Fix Nav to top on scroll
 window.onscroll = () => {
-	const header = document.querySelector('#header');
-	if (this.scrollY <= 140) nav.className = 'header';
-	else header.className = 'header__color';
+    const nav = document.querySelector('#header');
+    if(this.scrollY <= 140) nav.className = 'header';
+    else nav.className = 'header__color';
 };
 
 // Placeholder and Label Animation
