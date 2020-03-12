@@ -305,16 +305,6 @@ section.works{
     margin-top: 50px;
     padding: 150px 0px 80px;
 }
-section.works .fd-in{
-    --sal-duration: 600ms;
-    --sal-easing: ease-in;
-}
-section.works .fd-in1{
-    --sal-delay: 450ms;
-}
-section.works .fd-in2{
-    --sal-delay: calc(450ms * 2);
-}
 section.works .work-portfolio{
     color: #7e7e7e;
     padding: 10% 24px;
